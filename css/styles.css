@@ -1,0 +1,42 @@
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-text-color: #757575;
+  --primary-bcr-color: #e5e5e5;
+}
+
+body {
+  background-color: var(--primary-bcr-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+
+.site-nav,
+.logo,
+.link.current {
+  color: var(--accent-color);
+}
+.site-navn .link:focus,
+.site-navn,
+.link:hover {
+  color: var(--primary-text-color);
+}
+.section-title {
+  color: var(--primary-text-color);
+}
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+.text,
+.text-list {
+  color: var(--title-text-color);
+}
+.section-team {
+  background-color: #f5f4fa;
+}
+.button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
