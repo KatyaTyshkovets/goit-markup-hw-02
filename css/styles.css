@@ -147,4 +147,6 @@ body {
 .item-button:focus,
 .item-button:hover {
   color: #2196f3;
+
+  cursor: pointer;
 }
