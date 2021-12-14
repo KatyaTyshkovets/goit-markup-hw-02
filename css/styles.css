@@ -3,40 +3,120 @@
   --accent-color: #2196f3;
   --title-text-color: #757575;
   --primary-bcr-color: #e5e5e5;
+  --primary-white-color: #ffffff;
 }
 
 body {
   background-color: var(--primary-bcr-color);
   color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
 }
 
+.logo {
+  font-family: Raleway, cursive;
+  color: var(--accent-color);
+  text-decoration: none;
+
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-style {
+  color: var(--primary-text-color);
+}
+.site-nav .link {
+  text-decoration: none;
+}
 .site-nav,
-.logo,
 .link.current {
   color: var(--accent-color);
 }
-.site-navn .link:focus,
-.site-navn,
-.link:hover {
-  color: var(--primary-text-color);
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
 }
+.site-nav,
 .section-title {
   color: var(--primary-text-color);
 }
+.auth-nav .link {
+  text-decoration: none;
+}
+.auth-nav,
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.hero-title {
+  color: var(--primary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+
 .feature-list .title {
   color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
+
 .text,
 .text-list {
   color: var(--title-text-color);
 }
+
+.text-list {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.section-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
 .section-team {
   background-color: #f5f4fa;
 }
 .button {
   background-color: var(--accent-color);
   color: #ffffff;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  font-size: 14px;
+  line-height: 1.71;
 }
