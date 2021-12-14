@@ -4,12 +4,17 @@
   --title-text-color: #757575;
   --primary-bcr-color: #e5e5e5;
   --primary-white-color: #ffffff;
+  --primary-bcrr-color:#f5f4fa;
+  --color-address:rgba(255, 255, 255, 0.6);
+  --bcr-footer:#2F303A;
+  
 }
 
 body {
-  background-color: var(--primary-bcr-color);
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
+  font-size: 14px;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -39,17 +44,21 @@ body {
 .site-nav .link:hover {
   color: var(--accent-color);
 }
+.site-nav .link{
+  color: var(--primary-text-color);
+}
 .site-nav,
 .section-title {
   color: var(--primary-text-color);
 }
 .auth-nav .link {
   text-decoration: none;
+
+  color: var(--title-text-color);
 }
 .auth-nav,
 .site-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -66,7 +75,6 @@ body {
   color: var(--primary-text-color);
 
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -76,7 +84,6 @@ body {
 }
 
 .text-list {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -101,11 +108,11 @@ body {
 }
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color:var(--primary-bcr-color);
 }
 .button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--primary-white-color)
 
   font-family: inherit;
   font-weight: bold;
@@ -116,10 +123,26 @@ body {
   text-align: center;
 }
 
+
+
+.page-footer{
+background-color: var(--bcr-footer);
+}
+
 .footer {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+.footer-text, .contact{
+  text-decoration: none;
+}
+.footer-text{
+  color: var(--primary-white-color);
+
+}
+.contact{
+ color: var(--color-address);
 }
 
 /* portfolio */
@@ -132,13 +155,18 @@ body {
   line-height: 1.62;
 }
 
-.project {
+.project-title{
+  color: var(--primary-text-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
+.project-list{
+  text-decoration: none;
+}
 .project-text {
   color: var(--title-text-color);
   font-size: 16px;
@@ -147,7 +175,8 @@ body {
 
 .item-button:focus,
 .item-button:hover {
-  color: #2196f3;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 
   cursor: pointer;
 }
