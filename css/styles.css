@@ -43,6 +43,11 @@ body {
 .site-nav .link:hover {
   color: var(--accent-color);
 }
+.auth-nav .link:focus,
+.auth-nav .link:hover {
+  color: var(--accent-color);
+}
+
 .site-nav .link {
   color: var(--primary-text-color);
 }
@@ -134,23 +139,25 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-text,
-.contact {
+.footer .link {
   text-decoration: none;
 }
-.footer-text {
-  color: var(--primary-white-color);
-}
-.contact {
+.footer .link {
   color: var(--color-address);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
 }
 
 /* portfolio */
 
-.item {
+.item-button {
   color: var(--primary-text-color);
 
-  font-family: inherit;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
