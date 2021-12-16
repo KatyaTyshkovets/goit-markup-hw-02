@@ -67,7 +67,8 @@ body {
 }
 
 .hero-title {
-  color: var(--primary-text-color);
+  color: var(--primary-white-color);
+  background-color: var(--bcr-footer);
 
   font-weight: 900;
   font-size: 44px;
@@ -118,6 +119,8 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
+  cursor: pointer;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -156,7 +159,7 @@ body {
 .item-button {
   color: var(--primary-text-color);
 
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
