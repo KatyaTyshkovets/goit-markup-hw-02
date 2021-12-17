@@ -7,6 +7,7 @@
   --primary-bcrr-color: #f5f4fa;
   --color-address: rgba(255, 255, 255, 0.6);
   --bcr-footer: #2f303a;
+  --btn-hov-foc-color: #2196f3;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
   text-decoration: none;
 }
 .site-nav,
-.link.current {
+.link current {
   color: var(--accent-color);
 }
 .site-nav .link:focus,
@@ -66,14 +67,49 @@ body {
   line-height: 1.14;
 }
 
+/* Герой */
+
+.hero {
+  background-color: var(--bcr-footer);
+}
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--bcr-footer);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--btn-hov-foc-color);
+}
+/* ПРИНЦИПИ РОБОТИ */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .feature-list .title {
@@ -97,6 +133,8 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+/* Чем мы занимаемся */
+
 .section-title {
   color: var(--primary-text-color);
 
@@ -105,6 +143,9 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+
+/* Наша команда */
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -115,20 +156,8 @@ body {
 .section-team {
   background-color: var(--primary-bcr-color);
 }
-.button {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+/* Футер */
 
 .page-footer {
   background-color: var(--bcr-footer);
